@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #1766ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    background-color: #2771FF;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 100;
+}
+
+.form-lokasi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+}
+
+#lokasi {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+#tombol-cari {
+    border: none;
+    background-color: #1766ff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: white;
+}
+
+#tombol-cari:hover {
+    cursor: pointer;
+}
+
+.cuaca-utama {
+    text-align: center;
+    align-content: center;
+    margin: 25px 0;
+}
+
+.cuaca-utama-info {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.ket-cuaca {
+    margin-top: 8px;
+    padding-bottom: 8px;
+    border-color: white;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+}
+
+.cuaca-utama-wind,
+.cuaca-utama-humidity,
+.cuaca-utama-pressure {
+    padding: 8px 12px;
+}
+
+.daftar-cuaca-mendatang {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-cuaca {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.card-cuaca-icon {
+    width: 128px;
+}
+
+.card-cuaca-info {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-size: 12px;
+}
+
+.card-cuaca-temp {
+    padding: 8px 12px;
+}
+
+.card-cuaca-angin,
+.card-cuaca-humidity,
+.cuaca-utama-temp {
+    padding: 18px;
+}
+
+.card-cuaca-angin,
+.card-cuaca-humidity {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-cuaca-angin {
+    border-width: 1px 1px 0 0;
+    border-color: white;
+    border-style: solid;
+    flex-grow: 1;
+}
+
+.card-cuaca-humidity {
+    border-top: 1px solid white;
+    flex-grow: 1;
+}
+
+.card-cuaca-angin img,
+.card-cuaca-humidity img {
+    height: 18px;
+    width: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        align-items: center;
+    }
+    
+    .container {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .daftar-cuaca-mendatang {
+        flex-direction: row;
+    }
+}
